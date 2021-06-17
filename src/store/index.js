@@ -15,7 +15,7 @@ export default new Vuex.Store({
   },
   actions: {
     GET_PRODUCTS_FROM_API({ commit }) {
-      return axios("https://irinawinter.github.io/online-shop-vue/db", {
+      return axios("http://localhost:3000/products", {
         method: "GET",
       })
         .then((products) => {
